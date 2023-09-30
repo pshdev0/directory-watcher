@@ -10,3 +10,5 @@ new DirectoryWatcher(Paths.get("./my/dir/"),
 	() -> {} // default
 );
 ```
+
+Use `mvn deploy` to install into your local Maven directory `~/.m2/repositories`

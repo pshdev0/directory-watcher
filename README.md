@@ -4,8 +4,9 @@ Simple class to watch a directory and act on file create, modify, delete, and de
 
 ```
 new DirectoryWatcher(Paths.get("./my/dir/"),
-	(filePath) -> {},
-	(filePath) -> {},
-	(filePath) -> {}.
-	() -> {});
+	(filePath) -> {}, // create
+	(filePath) -> {}, // modify
+	(filePath) -> {}. // delete
+	() -> {} // default
+);
 ```

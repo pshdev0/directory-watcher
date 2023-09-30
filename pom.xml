@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>Directory Watcher</name>
-    <description>Watch a directory and automatically act on read, write and delete operations</description>
+    <description>Watch a directory and automatically act on create, modify, delete operations</description>
 
     <properties>
         <maven.compiler.source>20</maven.compiler.source>

@@ -17,7 +17,10 @@ public class DirectoryWatcher {
                             Runnable defaultFunc) throws IOException {
         poll = true;
         watchService = FileSystems.getDefault().newWatchService();
-        path.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_MODIFY, StandardWatchEventKinds.ENTRY_DELETE);
+        path.register(watchService, 
+                      StandardWatchEventKinds.ENTRY_CREATE,
+                      StandardWatchEventKinds.ENTRY_MODIFY, 
+                      StandardWatchEventKinds.ENTRY_DELETE);
 
         Runnable run = () -> {
             boolean poll = true;
